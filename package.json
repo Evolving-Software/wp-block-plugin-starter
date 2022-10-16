@@ -6,7 +6,7 @@
   "license": "GPL-2.0-or-later",
   "main": "build/index.js",
   "scripts": {
-    "dev": "concurrently \"yarn tailwind\" \"yarn sync\" \"yarn start\"",
+    "dev": "concurrently  \"yarn sync\" \"yarn start\"",
     "build": "webpack --mode=production --node-env=production",
     "format": "wp-scripts format",
     "lint:css": "wp-scripts lint-style",
@@ -19,7 +19,7 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
-    "tailwind": "npx tailwindcss -i ./src/style.css -o ./src/tailwind.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/style.css -o ./src/index.css --watch"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
@@ -35,6 +35,7 @@
     "webpack": "^5.74.0"
   },
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "concurrently": "^7.4.0",
+    "postcss-import": "^15.0.0"
   }
 }

@@ -8,7 +8,6 @@ import { useBlockProps } from "@wordpress/block-editor";
 import React from "react";
 import ReactDOM from "react-dom";
 const { useState } = React;
-
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
