@@ -19,7 +19,7 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './editor.scss';
+import './editor.css';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -31,12 +31,9 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Pricing Calculator – hello from the editor!',
-				'pricing-calculator'
-			) }
-		</p>
+		<div {...useBlockProps.save()}>
+			<div className="pm-count">0</div>
+		</div>
 	);
 }
 

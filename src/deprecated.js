@@ -20,16 +20,11 @@ export default function Deprecated() {
                 attributes: {
                     "title": "Pricing Calculator"
                 },
-                save: function (props) {
+                save: function () {
                     return (
-                        <>
-                            <p {...useBlockProps.save()}>
-                                {"Pricing Calculator – hello from the sfdsfsdfaved content!"}
-                            </p>
-                            <label htmlFor="myInput">Project Managers</label>
-
-                            < input type="text" id="myInput" value="Hello World" />
-                        </>
+                        <div {...useBlockProps.save()}>
+                            <div className="pm-count">0</div>
+                        </div>
                     );
                 }
             }

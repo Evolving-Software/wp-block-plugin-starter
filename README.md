@@ -1,55 +1,41 @@
-=== Pricing Calculator ===
-Contributors: The WordPress Contributors
-Tags: block
-Tested up to: 6.0
-Stable tag: 0.1.0
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+<!--
+ Copyright (C) 2022 RDS Ventures LLC
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+ 
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
 
-Example static block scaffolded with Create Block tool.
+# WordPress Block Plugin Starter Kit
 
-== Description ==
+This is a starter kit for creating a WordPress block plugin. It is based on @wordpress/create-block and includes the following features:
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+-   ESNext JavaScript
+-   JSX syntax
+-   TailwindCSS for styles
+-   Webpack build process
+-   SWC for faster builds
+-   ESLint for code linting
+-   Prettier for code formatting
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+## Prerequisites
 
-== Installation ==
+-   [Node.js](https://nodejs.org/en/)
+-   [Yarn](https://yarnpkg.com/)
 
-This section describes how to install the plugin and get it working.
 
-e.g.
+## Getting Started
 
-1. Upload the plugin files to the `/wp-content/plugins/pricing-calculator` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-   the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-   directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-   (or jpg, jpeg, gif).
-2. This is the second screen shot
-
-== Changelog ==
-
-= 0.1.0 =
-
-- Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+1.  Clone this repository
+2.  Update the proxy.URL.target in `webpack.config.js` to match your local WordPress installation
+2.  Run `yarn`
+3.  Run `yarn dev` to start the build process and watch for changes

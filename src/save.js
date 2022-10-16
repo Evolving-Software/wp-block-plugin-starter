@@ -19,15 +19,12 @@ const { useState } = React;
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	// const [pmCount, setPmCount] = useState(0);
+
 
 	return (
 		<>
-			<div className="flex  flex-col">
-				<label htmlFor="myInput">Project Managers</label>
-				<input type="text" id="myInput" value="PM" />
-				<label htmlFor="myInput">Designers</label>
-				<input type="text" id="myInput" value="PM" />
+			<div {...useBlockProps.save()}>
+				<div className="text-lg text-green-500">This is a template for creating a WordPress Block Plugin.</div>
 			</div>
 		</>
 	);

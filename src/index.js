@@ -12,7 +12,7 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.css';
+import './tailwind.css';
 
 /**
  * Internal dependencies
@@ -45,7 +45,7 @@ registerBlockType(metadata.name, {
 			save: function (props) {
 				return (
 					<>
-						<div className="flex  flex-col">
+						<div className="flex bg-blue-600 flex-col">
 							<label htmlFor="myInput">Project Managers</label>
 							<input type="text" id="myInput" value="PM" />
 							<label htmlFor="myInput">Designers</label>
