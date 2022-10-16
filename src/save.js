@@ -4,7 +4,10 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from "@wordpress/block-editor";
+import React from "react";
+import ReactDOM from "react-dom";
+const { useState } = React;
 
 /**
  * The save function defines the way in which the different attributes should
@@ -16,9 +19,16 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save() {
+	// const [pmCount, setPmCount] = useState(0);
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Pricing Calculator – hello from the saved content!' }
-		</p>
+		<>
+			<div className="flex bg-black flex-col">
+				<label htmlFor="myInput">Project Managers</label>
+				<input type="text" id="myInput" value="PM" />
+				<label htmlFor="myInput">Designers</label>
+				<input type="text" id="myInput" value="PM" />
+			</div>
+		</>
 	);
 }

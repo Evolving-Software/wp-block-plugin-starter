@@ -12,13 +12,14 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+import './style.css';
 
 /**
  * Internal dependencies
  */
-import Edit from './edit';
+import edit from './edit';
 import save from './save';
+// import deprecated from './deprecated';
 import metadata from './block.json';
 
 /**
@@ -26,13 +27,29 @@ import metadata from './block.json';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( metadata.name, {
+registerBlockType(metadata.name, {
 	/**
 	 * @see ./edit.js
 	 */
-	edit: Edit,
+	edit,
 	/**
 	 * @see ./save.js
 	 */
 	save,
-} );
+
+	deprecated: [
+		{
+			attributes: {
+				"title": "Pricing Calculator"
+			},
+			save: function (props) {
+				return (
+					<>
+						<label htmlFor="myInput">Project Managers</label>
+						< input type="text" id="myInput" value="Hello World" />
+					</>
+				);
+			}
+		}
+	]
+});

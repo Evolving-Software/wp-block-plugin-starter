@@ -20,7 +20,10 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_pricing_calculator_block_init() {
+function es_pricing_calculator_block_init() {
 	register_block_type( __DIR__ . '/build' );
+
 }
-add_action( 'init', 'create_block_pricing_calculator_block_init' );
+
+
+add_action( 'init', 'es_pricing_calculator_block_init' );
