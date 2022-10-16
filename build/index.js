@@ -116,13 +116,21 @@ __webpack_require__.r(__webpack_exports__);
       "title": "Pricing Calculator"
     },
     save: function (props) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+        className: "flex  flex-col"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
         htmlFor: "myInput"
       }, "Project Managers"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
         type: "text",
         id: "myInput",
-        value: "Hello World"
-      }));
+        value: "PM"
+      }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
+        htmlFor: "myInput"
+      }, "Designers"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+        type: "text",
+        id: "myInput",
+        value: "PM"
+      })));
     }
   }]
 });
@@ -174,7 +182,7 @@ function save() {
   // const [pmCount, setPmCount] = useState(0);
 
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "flex bg-black flex-col"
+    className: "flex  flex-col"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
     htmlFor: "myInput"
   }, "Project Managers"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {

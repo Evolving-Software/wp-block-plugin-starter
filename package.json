@@ -14,7 +14,7 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-		"sync": "browser-sync start --proxy 'themedev.local' --files '**/*.php' 'build/*.js' 'build/*.css'"
+		"sync": "browser-sync start --proxy themedev.local --files '**/*.php' 'build/*.js' 'build/*.css'"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^24.3.0",

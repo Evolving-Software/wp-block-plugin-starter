@@ -23,7 +23,7 @@ export default function save() {
 
 	return (
 		<>
-			<div className="flex bg-black flex-col">
+			<div className="flex  flex-col">
 				<label htmlFor="myInput">Project Managers</label>
 				<input type="text" id="myInput" value="PM" />
 				<label htmlFor="myInput">Designers</label>

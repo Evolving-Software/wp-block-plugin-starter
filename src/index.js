@@ -45,8 +45,12 @@ registerBlockType(metadata.name, {
 			save: function (props) {
 				return (
 					<>
-						<label htmlFor="myInput">Project Managers</label>
-						< input type="text" id="myInput" value="Hello World" />
+						<div className="flex  flex-col">
+							<label htmlFor="myInput">Project Managers</label>
+							<input type="text" id="myInput" value="PM" />
+							<label htmlFor="myInput">Designers</label>
+							<input type="text" id="myInput" value="PM" />
+						</div>
 					</>
 				);
 			}
